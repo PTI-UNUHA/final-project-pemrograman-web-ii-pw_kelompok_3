@@ -25,7 +25,7 @@ export default function Home() {
         <nav className="navbar">
           <div className="logo">
             <div className="logo-icon">📘</div>
-            <h1>EduCourse</h1>
+            <h1>EduCourse Icha</h1>
           </div>
 
           <ul className="menu">
