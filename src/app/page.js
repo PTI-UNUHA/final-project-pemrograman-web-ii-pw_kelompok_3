@@ -1,7 +1,11 @@
 "use client";
 import { useEffect, useState } from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+
 
 export default function Home() {
+   const router = useRouter(); 
   const [showCategoryBar, setShowCategoryBar] = useState(false);
 
   useEffect(() => {
@@ -22,19 +26,29 @@ export default function Home() {
       
 
       <main className="main">
-        <nav className="navbar">
-          <div className="logo">
-            <div className="logo-icon">📘</div>
-            <h1>EduCourse Icha</h1>
-          </div>
+        <nav className="navbar navbar-scrolled">
+  <div className="logo">
+    <div className="logo-icon">📘</div>
+    <h1>EduCourse</h1>
+  </div>
 
-          <ul className="menu">
-            <li>Beranda</li>
-            <li>Kursus</li>
-          </ul>
+ <ul className="menu">
+  <li>
+    <Link href="/">Beranda</Link>
+  </li>
+  <li>
+    <Link href="/kursus">Kursus</Link>
+  </li>
+</ul>
 
-          <button className="search-btn">🔍 Cari Kursus</button>
-        </nav>
+
+   <Link href="/kursus#filter">
+  <button className="search-btn">🔍 Cari Kursus</button>
+  
+
+</Link>
+</nav>
+
 
         <section className="hero">
           <span className="badge">Platform Kursus Online Terbaik</span>
@@ -51,8 +65,10 @@ export default function Home() {
           </p>
 
           <div className="btn-group">
-            <button className="primary">Jelajahi Kursus →</button>
-            <button className="outline">Lihat Kursus Populer</button>
+            
+            <Link href="#popular" className="outline">
+              Lihat Kursus Populer
+            </Link>
           </div>
         </section>
 
@@ -77,7 +93,7 @@ export default function Home() {
   </div>
 </section>
 
-    <section className="popular-section">
+   <section id="popular" className="popular-section">
   <span className="popular-badge">⭐ Kursus Populer</span>
 
   <h2 className="popular-title">Kursus Terpopuler</h2>
@@ -85,14 +101,19 @@ export default function Home() {
     Dipilih khusus untuk Anda berdasarkan rating tertinggi dan jumlah siswa
   </p>
 
-  <div className="course-list">
+
+<div id="home-course-cards" className="course-list">
+  
+
 
     {/* CARD 1 */}
     <div className="course-card">
-      <img
-        src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d"
-        className="course-img"
-      />
+      <Link href="/deskripsi10" className="card-link">
+       <img
+    src="/foto1.jpeg" // langsung dari public
+    alt="Dasar Pemrograman Web"
+    className="course-img"
+  />
 
       <div className="card-top">
         <span className="cat purple">Web Development</span>
@@ -119,14 +140,17 @@ export default function Home() {
         <h3 className="price">Rp 199.000</h3>
         <span className="level">Pemula</span>
       </div>
+      </Link>
     </div>
 
     {/* CARD 2 */}
     <div className="course-card">
-      <img
-        src="https://images.unsplash.com/photo-1518770660439-4636190af475"
-        className="course-img"
-      />
+      <Link href="/deskripsi11" className="card-link">
+       <img
+    src="/foto2.jpeg" // langsung dari public
+    alt="Dasar Pemrograman Web"
+    className="course-img"
+  />
 
       <div className="card-top">
         <span className="cat purple">Web Development</span>
@@ -134,7 +158,7 @@ export default function Home() {
       </div>
 
       <h3 className="course-name">
-        React JS - Dari Pemula hingga Mahir
+        React JS - Dari Pemula hingga Mahir                                      
       </h3>
 
       <p className="mentor">Siti Aminah</p>
@@ -153,17 +177,20 @@ export default function Home() {
         <h3 className="price">Rp 299.000</h3>
         <span className="level">Menengah</span>
       </div>
+      </Link>
     </div>
 
     {/* CARD 3 */}
     <div className="course-card">
+      <Link href="/deskripsi12" className="card-link">
       <img
-        src="https://images.unsplash.com/photo-1551836022-4c4c79ecde51"
-        className="course-img"
-      />
+    src="/foto3.jpeg" // langsung dari public
+    alt="Dasar Pemrograman Web"
+    className="course-img"
+  />
 
       <div className="card-top">
-        <span className="cat green">Data Science</span>
+        <span className="cat purple">Data Science</span>
         <span className="popular-tag">🔥 Populer</span>
       </div>
 
@@ -187,49 +214,55 @@ export default function Home() {
         <h3 className="price">Rp 349.000</h3>
         <span className="level">Menengah</span>
       </div>
+      </Link>
     </div>
 
+
+    {/* CARD 4 */}
     <div className="course-card">
+      <Link href="/deskripsi13" className="card-link">
       <img
-        src="https://images.unsplash.com/photo-1551836022-4c4c79ecde51"
-        className="course-img"
-      />
+    src="/foto6.jpeg" // langsung dari public
+    alt="Dasar Pemrograman Web"
+    className="course-img"
+  />
 
       <div className="card-top">
-        <span className="cat green">Data Science</span>
+        <span className="cat purple">Mobile Development</span>
         <span className="popular-tag">🔥 Populer</span>
       </div>
 
       <h3 className="course-name">
-        Python untuk Data Science & Machine Learning
+        Mobile App Development dengan Flutter
       </h3>
 
-      <p className="mentor">Dr. Ahmad Hidayat</p>
+      <p className="mentor">Dewi Kusuma</p>
 
       <div className="course-info">
-        ⭐ 4.7 • 👥 9.450 • ⏱ 20 jam
+        ⭐ 4.8 • 👥 6.540 • ⏱ 22 jam
       </div>
 
       <div className="tags">
-        <span>Python</span>
-        <span>Data Science</span>
-        <span>Machine Learning</span>
+        <span>Flutter</span>
+        <span>Dart</span>
+        <span>Mobile</span>
       </div>
 
       <div className="card-bottom">
-        <h3 className="price">Rp 349.000</h3>
+        <h3 className="price">Rp 329.000</h3>
         <span className="level">Menengah</span>
       </div>
+      </Link>
     </div>
-
-  </div>
+</div>
+  
 </section>
 
 {/* ==== SEE ALL COURSE SECTION ==== */}
 <section className="see-all">
-  <button className="see-all-btn">
+  <Link href="/kursus#course-cards" className="see-all-btn">
     Lihat Semua Kursus →
-  </button>
+  </Link>
 </section>
 
 {/* ==== CTA SECTION ==== */}
@@ -240,13 +273,10 @@ export default function Home() {
     bersama EduCourse
   </p>
 
-  <button className="cta-btn">
-    Mulai Sekarang →
-  </button>
 </section>
 
 
-       <div style={{ height: "80px" }}></div>
+       <div style={{ height: "50px" }}></div>
 
       </main>
     </>
