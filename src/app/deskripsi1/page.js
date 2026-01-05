@@ -9,7 +9,7 @@ export default function CourseDetailPage() {
     <nav className="navbar navbar-scrolled">
   <div className="logo">
     <div className="logo-icon">📘</div>
-    <h1>EduCourse</h1>
+    <h1>Skillora</h1>
   </div>
 
    <ul className="menu">
