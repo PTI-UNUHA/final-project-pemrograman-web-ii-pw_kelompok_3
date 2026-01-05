@@ -43,7 +43,7 @@ export default function Home() {
 
 
    <Link href="/kursus#filter">
-  <button className="search-btn">🔍 Cari Kursus</button>
+  <button className="search-btn">🔍Cari Kursus</button>
   
 
 </Link>
