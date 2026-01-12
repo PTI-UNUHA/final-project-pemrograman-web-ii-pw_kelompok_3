@@ -51,7 +51,10 @@ export default function Home() {
 
 
         <section className="hero">
-          <span className="badge">Platform Kursus Online Terbaik</span>
+           <span className="hero-badge">
+            <span className="badge-star">✦</span>
+            Platform Kursus Online <strong>#1</strong> di Indonesia
+          </span>
 
           <h2 className="title">
             Tingkatkan <span className="highlight">Skill</span> Anda
@@ -265,18 +268,191 @@ export default function Home() {
   </Link>
 </section>
 
+
+
+
+<section className="why-section">
+  <div className="why-header">
+    <span className="why-badge">Kenapa Pilih Skillora?</span>
+    <h2>Platform Belajar dengan Banyak Keunggulan</h2>
+    <p>Dirancang untuk membantu kamu belajar lebih efektif dan siap ke dunia industri</p>
+  </div>
+
+  <div className="why-grid">
+    <div className="why-card">
+      <div className="why-icon">📚</div>
+      <h3>Materi Berkualitas</h3>
+      <p>Kurikulum terstruktur dan selalu diperbarui sesuai kebutuhan industri</p>
+    </div>
+
+    <div className="why-card">
+      <div className="why-icon">👨‍🏫</div>
+      <h3>Instruktur Expert</h3>
+      <p>Belajar langsung dari praktisi dan ahli berpengalaman</p>
+    </div>
+
+    <div className="why-card">
+      <div className="why-icon">🎓</div>
+      <h3>Sertifikat Resmi</h3>
+      <p>Sertifikat diakui industri setelah menyelesaikan kursus</p>
+    </div>
+
+    <div className="why-card">
+      <div className="why-icon">⏱️</div>
+      <h3>Akses Selamanya</h3>
+      <p>Akses materi kapan saja tanpa batas waktu</p>
+    </div>
+
+    <div className="why-card">
+      <div className="why-icon">💻</div>
+      <h3>Project-Based</h3>
+      <p>Latihan dengan project nyata untuk portfolio</p>
+    </div>
+
+    <div className="why-card">
+      <div className="why-icon">🤝</div>
+      <h3>Komunitas Aktif</h3>
+      <p>Diskusi dan networking dengan ribuan siswa</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section className="testimonial-section">
+  <div className="testimonial-header">
+    <span className="badge">Testimoni</span>
+    <h2>Kata Mereka Tentang Skillora</h2>
+    <p>Testimoni dari ribuan siswa yang telah sukses</p>
+  </div>
+
+  <div className="testimonial-grid">
+
+    {/* CARD 1 */}
+    <div className="testimonial-card">
+      <div className="rating">★★★★★</div>
+      <p className="testimonial-text">
+        "Materi sangat lengkap dan mudah dipahami. Instrukturnya juga sangat membantu. Recommended banget!"
+      </p>
+
+      <div className="user">
+        <div className="avatar">AS</div>
+        <div>
+          <h4>Andi Setiawan</h4>
+          <span>Web Developer</span>
+        </div>
+      </div>
+    </div>
+
+    {/* CARD 2 */}
+    <div className="testimonial-card">
+      <div className="rating">★★★★★</div>
+      <p className="testimonial-text">
+        "Berkat Skillora, saya berhasil switch career ke UI/UX Designer. Worth it setiap rupiahnya!"
+      </p>
+
+      <div className="user">
+        <div className="avatar">DP</div>
+        <div>
+          <h4>Dinda Puspita</h4>
+          <span>UI/UX Designer</span>
+        </div>
+      </div>
+    </div>
+
+    {/* CARD 3 */}
+    <div className="testimonial-card">
+      <div className="rating">★★★★★</div>
+      <p className="testimonial-text">
+        "Platform terbaik untuk upgrade skill! Konten selalu update dan sesuai kebutuhan industri."
+      </p>
+
+      <div className="user">
+        <div className="avatar">RP</div>
+        <div>
+          <h4>Rudi Prasetyo</h4>
+          <span>Data Analyst</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
 {/* ==== CTA SECTION ==== */}
 <section className="cta-section">
   <h2>Siap Memulai Perjalanan Belajar Anda?</h2>
   <p>
     Bergabunglah dengan ribuan siswa yang telah meningkatkan karir mereka
-    bersama EduCourse
+    bersama Skillora
   </p>
-
 </section>
 
 
-       <div style={{ height: "50px" }}></div>
+
+<footer className="footer">
+  <div className="footer-container">
+
+    {/* BRAND */}
+    <div className="footer-brand">
+      <h2>Skillora</h2>
+      <p>
+        Platform kursus online terbaik untuk meningkatkan skill dan
+        mengembangkan karir Anda bersama instruktur berpengalaman.
+      </p>
+    </div>
+
+    {/* QUICK LINKS */}
+    <div className="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/">Beranda</a></li>
+        <li><a href="/kursus">Semua Kursus</a></li>
+        <li><a href="/tentang">Tentang Kami</a></li>
+        <li><a href="/instruktur">Instruktur</a></li>
+        <li><a href="/blog">Blog</a></li>
+      </ul>
+    </div>
+
+    {/* KATEGORI */}
+    <div className="footer-col">
+      <h4>Kategori</h4>
+      <ul>
+        <li>Web Development</li>
+        <li>Data Science</li>
+        <li>Design</li>
+        <li>Mobile Development</li>
+        <li>Marketing</li>
+      </ul>
+    </div>
+
+    {/* CONTACT */}
+    <div className="footer-col">
+      <h4>Hubungi Kami</h4>
+      <p>Jl. Pendidikan No. 123,<br />Jakarta Selatan, Indonesia</p>
+      <p>📞 +62 812 3456 7890</p>
+      <p>✉️ info@skillora.id</p>
+    </div>
+
+  </div>
+
+  {/* BOTTOM */}
+  <div className="footer-bottom">
+    <p>© 2024 Skillora. All rights reserved.</p>
+
+    <div className="footer-policy">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Cookie Policy</a>
+    </div>
+  </div>
+</footer>
+
+
+       
 
       </main>
     </>

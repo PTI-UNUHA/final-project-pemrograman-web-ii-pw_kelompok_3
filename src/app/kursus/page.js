@@ -509,6 +509,65 @@ export default function KursusPage() {
   </Link>
 </div>
   </div>
+
+       <footer className="footer footer-course">
+  <div className="footer-container">
+
+    {/* BRAND */}
+    <div className="footer-brand">
+      <h2>Skillora</h2>
+      <p>
+        Platform kursus online terbaik untuk meningkatkan skill dan
+        mengembangkan karir Anda bersama instruktur berpengalaman.
+      </p>
+    </div>
+
+    {/* QUICK LINKS */}
+    <div className="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/">Beranda</a></li>
+        <li><a href="/kursus">Semua Kursus</a></li>
+        <li><a href="/tentang">Tentang Kami</a></li>
+        <li><a href="/instruktur">Instruktur</a></li>
+        <li><a href="/blog">Blog</a></li>
+      </ul>
+    </div>
+
+    {/* KATEGORI */}
+    <div className="footer-col">
+      <h4>Kategori</h4>
+      <ul>
+        <li>Web Development</li>
+        <li>Data Science</li>
+        <li>Design</li>
+        <li>Mobile Development</li>
+        <li>Marketing</li>
+      </ul>
+    </div>
+
+    {/* CONTACT */}
+    <div className="footer-col">
+      <h4>Hubungi Kami</h4>
+      <p>Jl. Pendidikan No. 123,<br />Jakarta Selatan, Indonesia</p>
+      <p>📞 +62 812 3456 7890</p>
+      <p>✉️ info@skillora.id</p>
+    </div>
+
+  </div>
+
+  {/* BOTTOM */}
+  <div className="footer-bottom">
+    <p>© 2024 Skillora. All rights reserved.</p>
+
+    <div className="footer-policy">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Cookie Policy</a>
+    </div>
+  </div>
+</footer>
+
     </main>
   );
 }

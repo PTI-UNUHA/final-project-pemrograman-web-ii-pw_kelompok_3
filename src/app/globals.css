@@ -8,14 +8,14 @@ body {
 
 .main {
   min-height: 100vh;
-  background: linear-gradient(180deg, #FFF6EB 0%, #FFE6CA 100%);
+  background: #FFFFFF;
   color: #1f2937;
 }
 
 .logo h1 {
   font-size: 24px;
   font-weight: 700;
-  background: linear-gradient(135deg, #f97316, #fde047);
+   background:#FF9E2D;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -54,7 +54,7 @@ body {
 }
 
 .logo-icon {
-  background: linear-gradient(135deg, #f59e0b, #facc15);
+   background:#FF9E2D;
   color: black;
   padding: 6px 10px;
   border-radius: 10px;
@@ -86,7 +86,7 @@ body {
 }
 
 .search-btn {
-  background:linear-gradient(135deg, #f59e0b, #facc15);
+  background:#FF9E2D;
   border: none;
   padding: 10px 22px;
   border-radius: 30px;
@@ -110,6 +110,68 @@ body {
   color: white;
   padding: 10px 25px;
   border-radius: 30px;
+}
+
+/* ===============================
+   HERO BADGE – ELEGANT WHITE
+================================ */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 26px;
+  border-radius: 999px;
+
+  background: #ffffff;
+  color: #374151;
+  font-size: 15px;
+  font-weight: 600;
+
+  border: 1.5px solid #FF9E2D; /* oren lembut */
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.08),
+    inset 0 0 0 rgba(255,255,255,0.6);
+}
+
+/* ANGKA #1 */
+.hero-badge strong {
+  color: #ff7a2f;
+  font-weight: 700;
+}
+
+/* BINTANG DEKORATIF */
+.badge-star {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+
+  background: linear-gradient(135deg, #fff1e6, #ffd6b8);
+  color: #ff7a2f;
+
+  font-size: 13px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 4px 12px rgba(255, 122, 47, 0.35);
+}
+
+@media (max-width: 640px) {
+  .hero-badge {
+    font-size: 13px;
+    padding: 10px 18px;
+    gap: 8px;
+  }
+
+  .badge-star {
+    width: 22px;
+    height: 22px;
+    font-size: 12px;
+  }
 }
 
 .title {
@@ -232,15 +294,15 @@ html {
 
 /* Border sesuai warna icon */
 .stat-card:has(.icon.blue):hover {
-  border-color: #4A90E2;
+  border-color: #23A036  ;
 }
 
 .stat-card:has(.icon.purple):hover {
-  border-color: #7c5cff;
+  border-color: #FF9E2D ;
 }
 
 .stat-card:has(.icon.green):hover {
-  border-color: #22c55e;
+  border-color: #FFCB2D ;
 }
 
 
@@ -269,7 +331,7 @@ html {
 
 /* BADGE GARIS → WARNA */
 .popular-badge {
-background: linear-gradient(135deg, #f59e0b, #facc15);
+background: #23A036 ;
   border: none;
   padding: 12px 28px;
   border-radius: 30px;
@@ -328,7 +390,7 @@ background: linear-gradient(135deg, #f59e0b, #facc15);
 .course-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 25px 50px rgba(0,0,0,0.15);
-  border-color: #f97316; /* oren */
+  border-color: #23A036  /* oren */
 }
 
 /* GRID UMUM */
@@ -382,12 +444,12 @@ background: linear-gradient(135deg, #f59e0b, #facc15);
 }
 
 .cat.purple {
-  background: #7c5cff;
+  background: #23A036;
 }
 
 
 .popular-tag {
-  background: #ff7020;
+  background: #FF9E2D;
   color: white;
   padding: 6px 14px;
   border-radius: 20px;
@@ -410,7 +472,7 @@ background: linear-gradient(135deg, #f59e0b, #facc15);
 
 /* Saat kursor diarahkan ke card */
 .course-card:hover .course-name {
-  color: #f97316; /* oren */
+  color: #23A036 /* oren */
 }
 
 
@@ -435,10 +497,10 @@ background: linear-gradient(135deg, #f59e0b, #facc15);
 }
 
 .tags span {
-  background: #e9c6ed;
+  background: #FFCB2D;
   padding: 6px 12px;
   border-radius: 20px;
-  color: #7c1698;
+  color: #FFFFFF;
   font-size: 12px;
   font-weight: 500;
 }
@@ -455,17 +517,17 @@ background: linear-gradient(135deg, #f59e0b, #facc15);
 }
 
 .price {
-  color: #ff5b2e;
+  color: #23A036;
   font-size: 20px;
   font-weight: 700;
 }
 
 .level {
-  background: #e9f3ff;
+  background: #FF9E2D ;
   padding: 6px 14px;
   border-radius: 20px;
   font-size: 13px;
-  color: #1f2b4a;
+  color: #FFFFFF;
 }
 
 
@@ -473,7 +535,7 @@ background: linear-gradient(135deg, #f59e0b, #facc15);
    SEE ALL
 ================================ */
 .see-all {
-  margin-top: 1px;
+  margin-top: -50px;
   margin-bottom: 100px;
   text-align: center;
 }
@@ -495,9 +557,9 @@ background: linear-gradient(135deg, #f59e0b, #facc15);
   color: white;
   text-decoration: none;         /* 🔥 hapus underline <a> */
 
-  background: linear-gradient(135deg, #7c5cff, #e3c0e3);
+  background: #FFCB2D ;
 
-  box-shadow: 0 10px 30px rgba(124, 92, 255, 0.35);
+  box-shadow: 0 10px 30px #FF9E2D;
   transition: transform 0.3s ease,
               box-shadow 0.3s ease,
               background 0.3s ease;
@@ -505,7 +567,7 @@ background: linear-gradient(135deg, #f59e0b, #facc15);
 
 .see-all-btn:hover {
   transform: translateY(-4px);
-  box-shadow: 0 16px 40px rgba(124, 92, 255, 0.45);
+  box-shadow: 0 16px 40px #23A036;
 }
 
 
@@ -522,7 +584,7 @@ background: linear-gradient(135deg, #f59e0b, #facc15);
   padding: 70px 40px;
   border-radius: 28px;
   text-align: center;
-  background: linear-gradient(135deg, #5fa8ff, #6aa9ff);
+  background: #23A036 ;
   color: white;
   box-shadow: 0 20px 50px rgba(0,0,0,0.18);
 }
@@ -560,7 +622,7 @@ background: linear-gradient(135deg, #f59e0b, #facc15);
   justify-content: space-between;
   align-items: center;
 
-  background: #fff2eb;
+  background: #FFFFFF;
   border: 1px solid #ffccb3;
   border-radius: 14px;
 
@@ -593,8 +655,8 @@ background: linear-gradient(135deg, #f59e0b, #facc15);
    COURSE PAGE
 ================================ */
 .course-page {
-  background: linear-gradient(180deg, #FFF6EB 0%, #FFE6CA 100%);
-  padding-bottom: 100px;
+  background: #FFFFFF;
+  padding-bottom: 0px;
 }
 
 .course-list {
@@ -622,11 +684,46 @@ background: linear-gradient(135deg, #f59e0b, #facc15);
 }
 
 /* HERO */ 
-.course-hero { padding: 50px 16px; text-align: center; background: linear-gradient(135deg, #5fa8ff, #8b5cf6); color: #1f2937; }
+.course-hero {
+  position: relative;
+  padding: 70px 16px;
+  text-align: center;
+  color: #f5f3ff;
+  overflow: hidden;
+
+  background: #23A036 ;
+ 
+}
+
+/* BULET KIRI ATAS */
+.course-hero::before {
+  content: "";
+  position: absolute;
+  top: -120px;
+  left: -120px;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, #FFCB2D , transparent 65%);
+  border-radius: 50%;
+}
+
+/* BULET KANAN BAWAH */
+.course-hero::after {
+  content: "";
+  position: absolute;
+  bottom: -140px;
+  right: -140px;
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, #FFCB2D , transparent 65%);
+  border-radius: 50%;
+}
+
+
 
 
 .course-hero h1 { font-size: 48px; font-weight: 700; margin-bottom: 12px; } 
-.course-hero p { font-size: 18px; color: #374151; }
+.course-hero p { font-size: 18px; color: #f6f6f6; }
 
 
 /* FILTER BOX */
@@ -726,7 +823,7 @@ background: linear-gradient(135deg, #f59e0b, #facc15);
 
 .course-detail-page {
   padding: 1px 1px;
-  background: #fff6eb;
+  background: #23A036 ;
 }
 
 /* BACK LINK */
@@ -735,13 +832,13 @@ background: linear-gradient(135deg, #f59e0b, #facc15);
   margin-bottom: 30px;
   margin-top: 30px;
   margin-left: 20px;
-  color: #6b7280;
+  color: #FFFFFF;
   font-size: 17px;
   text-decoration: none;
 }
 
 .back-link:hover {
-  color: #ff7a2f;
+  color: #FFCB2D ;
 }
 
 .mentor {
@@ -761,7 +858,7 @@ background: linear-gradient(135deg, #f59e0b, #facc15);
   gap: 40px;
   padding: 50px;
   border-radius: 30px;
-  background: linear-gradient(135deg, #5fa8ff, #8b5cf6);
+  background: #FFFFFF  ;
   color: #1f2937;
 }
 
@@ -778,8 +875,8 @@ background: linear-gradient(135deg, #f59e0b, #facc15);
   color: white;
 }
 
-.tag.orange { background: #ff7a2f; }
-.tag.purple { background: #7c5cff; }
+.tag.orange { background: #23A036  }
+.tag.purple { background: #FF9E2D  }
 
 .hero-left h1 {
   font-size: 42px;
@@ -812,7 +909,7 @@ background: linear-gradient(135deg, #f59e0b, #facc15);
 
 /* ICON */
 .meta-icon {
-  color: #ff7a2f;
+  color: #FFCB2D ;
   font-size: 16px;
 }
 
@@ -850,7 +947,7 @@ background: linear-gradient(135deg, #f59e0b, #facc15);
 .hero-price h2 {
   font-size: 28px;
   font-weight: 700;
-  color: #ff7a2f;
+  color: #23A036  ;
   margin: 0;
 }
 
@@ -859,7 +956,7 @@ background: linear-gradient(135deg, #f59e0b, #facc15);
   padding: 14px 29px;
   border-radius: 30px;
   border: none;
-  background: #ff7a2f;
+  background: #FFCB2D ;
   color: #fff;
   font-size: 15px;
   font-weight: 600;
@@ -878,9 +975,9 @@ background: linear-gradient(135deg, #f59e0b, #facc15);
 /* GAMBAR */
 .hero-right img.course-img {
   width: 100%;          /* full lebar container */
-  height: 350px !important;   /* lebih panjang ke bawah */
+  
   border-radius: 28px;
-  border: 4px solid #7c3aed;
+  border: 4px solid #23A036;
   box-shadow: 0 10px 30px rgba(124, 58, 237, 0.25);
   object-fit: cover;
 }
@@ -963,8 +1060,8 @@ background: linear-gradient(135deg, #f59e0b, #facc15);
 }
 
 .topic-tags span {
-  background: #e9ddff;
-  color: #6b21a8;
+  background: #FFCB2D;
+  color: #FFFFFF;
   padding: 6px 14px;
   border-radius: 20px;
   font-size: 13px;
@@ -987,7 +1084,7 @@ background: linear-gradient(135deg, #f59e0b, #facc15);
 /* ICON */
 .box > .info-icon {
   font-size: 24px;
-  color: #ff7a2f;
+  color: #FF9E2D ;
   margin-right: 8px;
   flex-shrink: 0;
 }
@@ -1039,8 +1136,8 @@ background: linear-gradient(135deg, #f59e0b, #facc15);
   width: 22px;
   height: 22px;
   border-radius: 50%;
-  border: 2px solid #ff7a2f;
-  color: #ff7a2f;
+  border: 2px solid #FF9E2D ;
+  color: #FF9E2D ;
   font-size: 13px;
   font-weight: bold;
 
@@ -1082,7 +1179,7 @@ background: linear-gradient(135deg, #f59e0b, #facc15);
 .info-btn {
   width: 100%;
   margin-top: 20px;
-  background: #ff7a2f;
+  background: #FF9E2D ;
   color: white;
   border: none;
   padding: 14px;
@@ -1099,7 +1196,7 @@ background: linear-gradient(135deg, #f59e0b, #facc15);
 }
 
 .info-icon {
-  color: #ff7a2f;
+  color: #FF9E2D ;
   background: #fff1e8;
   padding: 6px;
   border-radius: 50%;
@@ -1113,31 +1210,138 @@ background: linear-gradient(135deg, #f59e0b, #facc15);
 
 
   /* DETAIL HERO → JADI 1 KOLOM */
+  /* =========================
+   RESPONSIVE FIX (AMAN)
+========================= */
+
+/* TABLET & iPad */
+@media (max-width: 1023px) and (min-width: 768px) {
+
   .course-detail-hero {
-    grid-template-columns: 1fr;
-    padding: 24px;
-    text-align: left;
+    grid-template-columns: 1fr 1fr; /* tetap kiri-kanan */
+    padding: 36px;
+    gap: 28px;
   }
 
   .hero-left h1 {
-    font-size: 32px;
+    font-size: 34px;
   }
 
-  .hero-right img.course-img {
-    height: 240px !important;
+  .hero-right img {
+    height: 300px;
   }
 
-  /* CONTENT → TURUN KE BAWAH */
+  .course-content {
+    grid-template-columns: 1.4fr 1fr; /* tetap ada sidebar */
+    gap: 24px;
+  }
+}
+
+/* HP */
+@media (max-width: 767px) {
+
+  .course-detail-hero {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+
+  .hero-left h1 {
+    font-size: 28px;
+  }
+
+  .hero-right img {
+    height: 220px;
+  }
+
   .course-content {
     grid-template-columns: 1fr;
   }
 
-  /* CHECKLIST */
-  .check-list {
+  .info-box {
+    position: static; /* biar gak aneh di HP */
+  }
+}
+
+/* =========================
+   IMAGE FIX (FINAL)
+========================= */
+
+/* WRAPPER */
+.hero-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* =========================
+   HERO WRAPPER
+========================= */
+
+/* DESKTOP: JANGAN POTONG */
+.course-detail-hero {
+  overflow: visible;
+}
+
+/* CONTAINER GAMBAR */
+.hero-right {
+  width: 100%;
+  max-width: 100%;
+  padding: 8px; /* ruang buat border */
+  box-sizing: border-box;
+}
+
+/* GAMBAR */
+.hero-right img {
+  width: 100%;
+  height: auto;
+  max-height: 360px;
+  object-fit: cover;
+  display: block;
+
+  border-radius: 28px;
+  border: 4px solid #ff7a2f;
+  box-shadow: 0 12px 30px rgba(255, 122, 47, 0.25);
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 1024px) {
+  .hero-right img {
+    max-height: 260px;
+  }
+}
+
+/* =========================
+   HP & TABLET KECIL
+========================= */
+@media (max-width: 768px) {
+
+  /* BARU DI SINI DIPOTONG */
+  .course-detail-hero {
+    overflow: hidden;
     grid-template-columns: 1fr;
   }
 
+  .hero-right {
+    padding: 0;
+  }
 
+  .hero-right img {
+    max-height: 200px;
+    border-radius: 20px;
+  }
+}
+
+/* =========================
+   HP KECIL
+========================= */
+@media (max-width: 480px) {
+  .hero-right img {
+    max-height: 160px;
+  }
+}
 
 
 
@@ -1254,3 +1458,380 @@ background: linear-gradient(135deg, #f59e0b, #facc15);
     font-size: 12px;
   }
 }
+
+/***************************************************************************************8
+/* ===============================
+   WHY EDUCOURSE (ORANGE VERSION)
+================================ */
+.why-section {
+  padding: 120px 50px;
+  background: #23A036 ;
+}
+
+/* HEADER */
+.why-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.why-badge {
+  display: inline-block;
+  background: white;
+  color: #23A036 ;
+  padding: 10px 26px;
+  border-radius: 30px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.why-header h2 {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.why-header p {
+  color: #FFCB2D;
+  font-size: 16px;
+}
+
+/* GRID */
+.why-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* CARD */
+.why-card {
+  background: white;
+  border-radius: 24px;
+  padding: 36px 28px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 28px 60px rgba(0,0,0,0.25);
+}
+
+/* ICON */
+.why-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 18px;
+  border-radius: 18px;
+  background: #FFCB2D;
+  color: #ff7a2f;
+  font-size: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* TITLE */
+.why-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1f2b4a;
+}
+
+/* DESC */
+.why-card p {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+/* TABLET */
+@media (max-width: 1024px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 640px) {
+  .why-section {
+    padding: 80px 20px;
+  }
+
+  .why-header h2 {
+    font-size: 32px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/*********************************************************************************
+/* ===============================
+   TESTIMONIAL SECTION
+================================ */
+.testimonial-section {
+  padding: 120px 50px;
+  background: #FFCB2D;
+}
+
+.testimonial-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.testimonial-header .badge {
+  display: inline-block;
+  background: #23A036;
+  color: white;
+  padding: 10px 26px;
+  border-radius: 30px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.testimonial-header h2 {
+  font-size: 38px;
+  margin-bottom: 12px;
+  color: #1f2937;
+}
+
+.testimonial-header p {
+  color: #6b7280;
+}
+
+/* GRID */
+.testimonial-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.testimonial-card {
+  background: white;
+  padding: 32px;
+  border-radius: 24px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 28px 60px rgba(0,0,0,0.18);
+}
+
+/* RATING */
+.rating {
+  color: #fbbf24;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+/* TEXT */
+.testimonial-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4b5563;
+  margin-bottom: 24px;
+}
+
+/* USER */
+.user {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* AVATAR INISIAL */
+.avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #23A036;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* USER INFO */
+.user h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.user span {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .testimonial-section {
+    padding: 80px 20px;
+  }
+
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ===============================
+   FOOTER – KUNING TUA ELEGAN
+================================ */
+.footer {
+  background: #FF9E2D ;
+  padding: 80px 60px 30px;
+  color: #FFFFFF;
+}
+
+/* GRID */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+  gap: 40px;
+}
+
+/* BRAND */
+.footer-brand h2 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #23A036 ; /* coklat emas */
+  margin-bottom: 14px;
+}
+
+.footer-brand p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #FFFFFF;
+}
+
+/* COLUMN */
+.footer-col h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #23A036 ;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #FFFFFF;
+}
+
+/* LINKS */
+.footer-col ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+}
+
+/* CONTACT */
+.footer-col p {
+  font-size: 15px;
+  margin-bottom: 12px;
+  color: #FFFFFF;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  max-width: 1200px;
+  margin: 50px auto 0;
+  padding-top: 25px;
+  border-top: 1px solid #23A036 ;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* COPYRIGHT */
+.footer-bottom p {
+  font-size: 14px;
+  color: #23A036 ;
+}
+
+/* POLICY */
+.footer-policy {
+  display: flex;
+  gap: 22px;
+}
+
+.footer-policy a {
+  font-size: 14px;
+  color: #23A036 ;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-policy a:hover {
+  color: #ffffff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 60px 24px 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+  }
+}
+
+
+
+
