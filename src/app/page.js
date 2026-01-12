@@ -127,7 +127,7 @@ export default function Home() {
         Dasar Pemrograman Web dengan HTML, CSS & JavaScript
       </h3>
 
-      <p className="mentor">Budi Santoso</p>
+      <p className="mentor">Budi Nugroho</p>
 
       <div className="course-info">
         ⭐ 4.8 • 👥 15.420 • ⏱ 12 jam
